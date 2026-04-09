@@ -130,6 +130,7 @@ body {
 
 .items-input {
   flex: 1;
+  min-width: 0; /* This magic line allows the input to shrink on small screens */
   padding: 10px;
   border: 1px solid #d7ccc8;
   border-radius: 8px;
@@ -140,8 +141,10 @@ body {
   font-weight: bold;
   color: #3e2723;
   font-size: 16px;
-  min-width: 80px;
+  min-width: 70px;
   text-align: right;
+  flex-shrink: 0; /* Protects this text from being squished */
+  white-space: nowrap; /* Keeps "RM" and the numbers perfectly on one line */
 }
 
 .calculate-btn {
