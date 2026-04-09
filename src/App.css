@@ -1,0 +1,167 @@
+/* Mobile-first base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f7f3f0;
+  color: #3e2723;
+}
+
+/* Target the React root div to center everything on the screen */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: row; /* This puts them side-by-side */
+  align-items: center; /* This centers them vertically against each other */
+  justify-content: center; /* This centers the whole group on the screen */
+  gap: 2px; /* Adds space between the logo and the text */
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.app-logo {
+  width: 350px; /* Increased size so it's not too small */
+  height: auto;
+  border-radius: 12px; /* Matches the "app icon" look from the image */
+}
+
+.header-title {
+  font-size: 32px; /* Larger font to match the bigger logo */
+  margin: 0;
+  color: #5d4037;
+  font-weight: 700;
+  /* If your logo already has the text "Bill Splitter" and you want to hide this text: */
+  display: none;
+}
+
+/* --- REMAINDER OF YOUR CSS --- */
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #6d4c41;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #d7ccc8;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fffaf7;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #8d6e63;
+  box-shadow: 0 0 0 2px rgba(141, 110, 99, 0.2);
+}
+
+.divider {
+  border: none;
+  border-top: 1px dashed #d7ccc8; /* Dashed line like a receipt */
+  margin: 24px 0;
+}
+
+.people-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.person-row {
+  background-color: #fffaf7;
+  border: 1px solid #efebe9;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.person-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #5d4037;
+  font-size: 16px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  opacity: 0.7;
+}
+
+.person-inputs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.items-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d7ccc8;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.person-total {
+  font-weight: bold;
+  color: #3e2723;
+  font-size: 16px;
+  min-width: 80px;
+  text-align: right;
+}
+
+.calculate-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #5d4037;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calculate-btn:hover {
+  background-color: #4e342e;
+}
+
+.calculate-btn:active {
+  transform: scale(0.98);
+}
