@@ -168,3 +168,129 @@ body {
 .calculate-btn:active {
   transform: scale(0.98);
 }
+
+/* --- NEW STYLES FOR SHARED ITEMS --- */
+.shared-section {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #fcf9f7;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #efebe9;
+}
+
+.shared-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.shared-header-row label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d4c41;
+}
+
+.add-shared-btn {
+  background-color: #8d6e63;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-shared-btn:hover {
+  background-color: #6d4c41;
+}
+
+.shared-item-card {
+  background: white;
+  border: 1px solid #d7ccc8;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.shared-input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.shared-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toggle-chip {
+  background-color: #efebe9;
+  color: #6d4c41;
+  border: 1px solid #d7ccc8;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-chip.active {
+  background-color: #5d4037;
+  color: white;
+  border-color: #5d4037;
+}
+
+/* Ensure the label for Personal Items has space */
+.people-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d4c41;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* --- NEW STYLES FOR VALIDATION BOX --- */
+.validation-box {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.validation-box.success {
+  background-color: #eefeeb;
+  border: 1px solid #c8e6c9;
+  color: #2e7d32;
+}
+
+.validation-box.error {
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  color: #c62828;
+}
+
+.validation-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.validation-row strong {
+  font-size: 16px;
+}
+
+.validation-message {
+  margin-top: 12px;
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
