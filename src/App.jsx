@@ -83,7 +83,7 @@ export default function BillSplitter() {
     const afterNum = parseFloat(totalAfter);
 
     if (!beforeNum || !afterNum) {
-      alert("Please enter the Total Before and Total After tax first!");
+      alert("Please enter the Subtotal and Total first!");
       return;
     }
 
@@ -139,7 +139,7 @@ export default function BillSplitter() {
 
           <div className="bill-section">
             <div className="input-group">
-              <label>Total Before Tax</label>
+              <label>Subtotal</label>
               <input
                   type="number"
                   value={totalBefore}
@@ -149,7 +149,7 @@ export default function BillSplitter() {
               />
             </div>
             <div className="input-group">
-              <label>Total After Tax</label>
+              <label>Total</label>
               <input
                   type="number"
                   value={totalAfter}
